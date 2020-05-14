@@ -13,6 +13,6 @@ Then user enters contact details "<firstname>" and "<lastname>" and "<position>"
 Then close the browser
 
 Examples:
-				| username 					| password | fistname | lastname | position |
+				| username 					| password | firstname | lastname | position |
 				| vivek.chopade28@gmail.com | @Vivek28 | Pranav   | Patil 	 | Developer |
 				

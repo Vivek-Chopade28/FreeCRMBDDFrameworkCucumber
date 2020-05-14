@@ -1,13 +1,12 @@
 package stepDefination;
 
+import java.util.concurrent.TimeUnit;
 import org.junit.Assert;
 import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
-import org.openqa.selenium.interactions.Actions;
-
 import cucumber.api.java.en.Given;
 import cucumber.api.java.en.Then;
 import cucumber.api.java.en.When;
@@ -16,6 +15,7 @@ import cucumber.api.java.en.When;
 public class LoginStepDefination {
 	
 	WebDriver driver;
+	
 
 	@Given("^user is already on login page$")
 	public void user_already_login_page() {
@@ -23,6 +23,7 @@ public class LoginStepDefination {
 	System.setProperty("webdriver.chrome.driver", "E:\\Vivek Automation Study\\All WebDrivers\\chromedriver_win32\\Chrome 81\\chromedriver.exe");	
 	driver = new ChromeDriver();	
 	driver.get("https://ui.freecrm.com/");
+	driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 }	
 	
 	
@@ -60,29 +61,24 @@ public class LoginStepDefination {
 	
 	@Then("^user move to new contact page$")
 	public void user_move_to_login_button() {
-//		JavascriptExecutor executor = (JavascriptExecutor)driver;
-//		WebElement element= driver.findElement(By.xpath("/html/body/div[1]/div/div[1]/a[3]/span"));
-//		executor. executeScript("arguments[0].click();", element);
-		
-//		driver.switchTo().frame("users icon");
-//		Actions action=new Actions(driver);
-//		action.moveToElement(driver.findElement(By.xpath("/html/body/div[1]/div/div[1]/a[3]/span"))).build().perform();
-//		driver.findElement(By.xpath("//*[@id=\"main-nav\"]/a[3]/span")).click();
-		
-		
+	WebElement element= driver.findElement(By.cssSelector("#main-nav > a:nth-child(3) > span"));
+	JavascriptExecutor executor = (JavascriptExecutor)driver;			
+	executor. executeScript("arguments[0].click();", element);
 	}
 	
 	@Then("^click on new contact btn$")
-	public void click_on_new_contact_btn() {
-		driver.findElement(By.xpath("//*[@id=\"dashboard-toolbar\"]/div[2]/div/a/button/i")).click();
+	public void click_on_new_contact_btn() throws InterruptedException {
+	Thread.sleep(3000);
+	driver.findElement(By.xpath("//*[@id=\"dashboard-toolbar\"]/div[2]/div/a/button/i")).click();
 	}
 	
 	@Then("^user enters contact details \"(.*)\" and \"(.*)\" and \"(.*)\"$") 
-	public void user_enters_fistname_and_lastname_and_position(String fistname, String lastname, String positon) {
-		driver.findElement(By.name("first_name")).sendKeys(fistname);
-		driver.findElement(By.name("last_name")).sendKeys(lastname);
-		driver.findElement(By.name("middle_name")).sendKeys(positon);
-		driver.findElement(By.xpath("//*[@id=\"dashboard-toolbar\"]/div[2]/div/button[2]")).click();
+	public void user_enters_fistname_and_lastname_and_position(String fistname, String lastname, String positon) throws InterruptedException {
+	Thread.sleep(3000);
+	driver.findElement(By.name("first_name")).sendKeys(fistname);
+	driver.findElement(By.name("last_name")).sendKeys(lastname);
+	driver.findElement(By.name("middle_name")).sendKeys(positon);
+	driver.findElement(By.xpath("//*[@id=\"dashboard-toolbar\"]/div[2]/div/button[2]")).click();
 		
 	}
 	

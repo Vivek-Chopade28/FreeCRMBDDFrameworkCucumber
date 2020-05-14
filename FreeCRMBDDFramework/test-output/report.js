@@ -69,7 +69,7 @@ formatter.examples({
       "cells": [
         "username",
         "password",
-        "fistname",
+        "firstname",
         "lastname",
         "position"
       ],
@@ -139,8 +139,9 @@ formatter.step({
 });
 formatter.step({
   "line": 12,
-  "name": "user enters contact details \"\u003cfirstname\u003e\" and \"Patil\" and \"Developer\"",
+  "name": "user enters contact details \"Pranav\" and \"Patil\" and \"Developer\"",
   "matchedColumns": [
+    2,
     3,
     4
   ],
@@ -155,14 +156,14 @@ formatter.match({
   "location": "LoginStepDefination.user_already_login_page()"
 });
 formatter.result({
-  "duration": 21356999100,
+  "duration": 21154645500,
   "status": "passed"
 });
 formatter.match({
   "location": "LoginStepDefination.title_of_login_page_is_free_CRM()"
 });
 formatter.result({
-  "duration": 17025000,
+  "duration": 16383000,
   "status": "passed"
 });
 formatter.match({
@@ -179,61 +180,63 @@ formatter.match({
   "location": "LoginStepDefination.user_enters_username_and_enters_password(String,String)"
 });
 formatter.result({
-  "duration": 1125509800,
+  "duration": 677764500,
   "status": "passed"
 });
 formatter.match({
   "location": "LoginStepDefination.user_clicks_on_login_buttom()"
 });
 formatter.result({
-  "duration": 64932900,
+  "duration": 53020000,
   "status": "passed"
 });
 formatter.match({
   "location": "LoginStepDefination.user_is_on_login_button()"
 });
 formatter.result({
-  "duration": 858341800,
+  "duration": 858759500,
   "status": "passed"
 });
 formatter.match({
   "location": "LoginStepDefination.user_move_to_login_button()"
 });
 formatter.result({
-  "duration": 203651700,
-  "error_message": "org.openqa.selenium.NoSuchFrameException: No frame element found by name or id users icon\nBuild info: version: \u00273.141.59\u0027, revision: \u0027e82be7d358\u0027, time: \u00272018-11-14T08:17:03\u0027\nSystem info: host: \u0027DESKTOP-VIVEK\u0027, ip: \u0027192.168.43.78\u0027, os.name: \u0027Windows 10\u0027, os.arch: \u0027amd64\u0027, os.version: \u002710.0\u0027, java.version: \u00271.8.0_211\u0027\nDriver info: driver.version: unknown\r\n\tat org.openqa.selenium.remote.RemoteWebDriver$RemoteTargetLocator.frame(RemoteWebDriver.java:885)\r\n\tat stepDefination.LoginStepDefination.user_move_to_login_button(LoginStepDefination.java:68)\r\n\tat ✽.Then user move to new contact page(E:/Vivek Automation Study/Automation Workspace/FreeCRMBDDFramework/src/main/java/Features/contacts.feature:10)\r\n",
-  "status": "failed"
+  "duration": 2049792400,
+  "status": "passed"
 });
 formatter.match({
   "location": "LoginStepDefination.click_on_new_contact_btn()"
 });
 formatter.result({
-  "status": "skipped"
+  "duration": 3521263900,
+  "status": "passed"
 });
 formatter.match({
   "arguments": [
     {
-      "val": "\u003cfirstname\u003e",
+      "val": "Pranav",
       "offset": 29
     },
     {
       "val": "Patil",
-      "offset": 47
+      "offset": 42
     },
     {
       "val": "Developer",
-      "offset": 59
+      "offset": 54
     }
   ],
   "location": "LoginStepDefination.user_enters_fistname_and_lastname_and_position(String,String,String)"
 });
 formatter.result({
-  "status": "skipped"
+  "duration": 4883100600,
+  "status": "passed"
 });
 formatter.match({
   "location": "LoginStepDefination.close_the_browser()"
 });
 formatter.result({
-  "status": "skipped"
+  "duration": 4449779500,
+  "status": "passed"
 });
 });
