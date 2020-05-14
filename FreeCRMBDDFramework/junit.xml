@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<testsuite failures="1" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="1" time="23.62646">
+<testcase classname="Free CRM create new contact" name="Free CRM crate new contact scenario" time="23.62646">
+<failure message="org.openqa.selenium.NoSuchFrameException: No frame element found by name or id users icon&#10;Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'&#10;System info: host: 'DESKTOP-VIVEK', ip: '192.168.43.78', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_211'&#10;Driver info: driver.version: unknown&#13;&#10;&#9;at org.openqa.selenium.remote.RemoteWebDriver$RemoteTargetLocator.frame(RemoteWebDriver.java:885)&#13;&#10;&#9;at stepDefination.LoginStepDefination.user_move_to_login_button(LoginStepDefination.java:68)&#13;&#10;&#9;at ✽.Then user move to new contact page(E:/Vivek Automation Study/Automation Workspace/FreeCRMBDDFramework/src/main/java/Features/contacts.feature:10)&#13;&#10;"><![CDATA[Given user is already on login page.........................................passed
+When title of login page is Free CRM........................................passed
+Then user enters "vivek.chopade28@gmail.com" and enters "@Vivek28"..........passed
+Then user clicks on login buttom............................................passed
+Then user is on home page...................................................passed
+Then user move to new contact page..........................................failed
+Then click on new contact btn...............................................skipped
+Then user enters contact details "<firstname>" and "Patil" and "Developer"..skipped
+Then close the browser......................................................skipped
+
+StackTrace:
+org.openqa.selenium.NoSuchFrameException: No frame element found by name or id users icon
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DESKTOP-VIVEK', ip: '192.168.43.78', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_211'
+Driver info: driver.version: unknown
+	at org.openqa.selenium.remote.RemoteWebDriver$RemoteTargetLocator.frame(RemoteWebDriver.java:885)
+	at stepDefination.LoginStepDefination.user_move_to_login_button(LoginStepDefination.java:68)
+	at ✽.Then user move to new contact page(E:/Vivek Automation Study/Automation Workspace/FreeCRMBDDFramework/src/main/java/Features/contacts.feature:10)
+]]></failure>
+</testcase>
+</testsuite>
