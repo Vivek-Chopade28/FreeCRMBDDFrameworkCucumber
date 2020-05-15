@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<testsuite failures="0" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="1" time="37.664509">
-<testcase classname="Free CRM create new contact" name="Free CRM crate new contact scenario" time="37.664509">
+<testsuite failures="0" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="1" time="60.240048">
+<testcase classname="Deal data creation" name="Free CRM crate new deal scenario" time="60.240048">
 <system-out><![CDATA[Given user is already on login page.........................................passed
 When title of login page is Free CRM........................................passed
-Then user enters "vivek.chopade28@gmail.com" and enters "@Vivek28"..........passed
+Then user enters username and password......................................passed
 Then user clicks on login buttom............................................passed
 Then user is on home page...................................................passed
-Then user move to new contact page..........................................passed
-Then click on new contact btn...............................................passed
-Then user enters contact details "Pranav" and "Patil" and "Developer".......passed
+Then user move to deal page.................................................passed
+Then click on new deal btn..................................................passed
+Then user enters deal details...............................................passed
 Then close the browser......................................................passed
 ]]></system-out>
 </testcase>

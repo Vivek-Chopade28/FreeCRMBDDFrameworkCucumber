@@ -6,7 +6,7 @@ import cucumber.api.junit.Cucumber;
 
 @RunWith(Cucumber.class)
 @CucumberOptions(
-		features = "E:\\Vivek Automation Study\\Automation Workspace\\FreeCRMBDDFramework\\src\\main\\java\\Features\\contacts.feature", // The path feature file
+		features = "E:\\Vivek Automation Study\\Automation Workspace\\FreeCRMBDDFramework\\src\\main\\java\\Features\\deal.feature", // The path feature file
 		glue= {"stepDefination"}, //The path of step definition file
 		monochrome = true, //To display console output in a proper readable form
 		dryRun = false, //To check mapping is proper between step defination and feature file

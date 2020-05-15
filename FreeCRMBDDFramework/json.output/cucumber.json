@@ -3,161 +3,148 @@
     "line": 1,
     "elements": [
       {
-        "line": 17,
-        "name": "Free CRM crate new contact scenario",
+        "line": 3,
+        "name": "Free CRM crate new deal scenario",
         "description": "",
-        "id": "free-crm-create-new-contact;free-crm-crate-new-contact-scenario;;2",
+        "id": "deal-data-creation;free-crm-crate-new-deal-scenario",
         "type": "scenario",
-        "keyword": "Scenario Outline",
+        "keyword": "Scenario",
         "steps": [
           {
             "result": {
-              "duration": 21154645500,
+              "duration": 37487019300,
               "status": "passed"
             },
             "line": 5,
             "name": "user is already on login page",
             "match": {
-              "location": "LoginStepDefination.user_already_login_page()"
+              "location": "DealStepDefination.user_already_login_page()"
             },
             "keyword": "Given "
           },
           {
             "result": {
-              "duration": 16383000,
+              "duration": 28961800,
               "status": "passed"
             },
             "line": 6,
             "name": "title of login page is Free CRM",
             "match": {
-              "location": "LoginStepDefination.title_of_login_page_is_free_CRM()"
+              "location": "DealStepDefination.title_of_login_page_is_free_CRM()"
             },
             "keyword": "When "
           },
           {
             "result": {
-              "duration": 677764500,
+              "duration": 658893100,
               "status": "passed"
             },
             "line": 7,
-            "name": "user enters \"vivek.chopade28@gmail.com\" and enters \"@Vivek28\"",
+            "name": "user enters username and password",
             "match": {
-              "arguments": [
-                {
-                  "val": "vivek.chopade28@gmail.com",
-                  "offset": 13
-                },
-                {
-                  "val": "@Vivek28",
-                  "offset": 52
-                }
-              ],
-              "location": "LoginStepDefination.user_enters_username_and_enters_password(String,String)"
+              "location": "DealStepDefination.user_enters_username_and_password(DataTable)"
             },
-            "matchedColumns": [
-              0,
-              1
+            "rows": [
+              {
+                "cells": [
+                  "vivek.chopade28@gmail.com",
+                  "@Vivek28"
+                ],
+                "line": 8
+              }
             ],
             "keyword": "Then "
           },
           {
             "result": {
-              "duration": 53020000,
-              "status": "passed"
-            },
-            "line": 8,
-            "name": "user clicks on login buttom",
-            "match": {
-              "location": "LoginStepDefination.user_clicks_on_login_buttom()"
-            },
-            "keyword": "Then "
-          },
-          {
-            "result": {
-              "duration": 858759500,
+              "duration": 60084500,
               "status": "passed"
             },
             "line": 9,
-            "name": "user is on home page",
+            "name": "user clicks on login buttom",
             "match": {
-              "location": "LoginStepDefination.user_is_on_login_button()"
+              "location": "DealStepDefination.user_clicks_on_login_buttom()"
             },
             "keyword": "Then "
           },
           {
             "result": {
-              "duration": 2049792400,
+              "duration": 7855300,
               "status": "passed"
             },
             "line": 10,
-            "name": "user move to new contact page",
+            "name": "user is on home page",
             "match": {
-              "location": "LoginStepDefination.user_move_to_login_button()"
+              "location": "DealStepDefination.user_is_on_login_button()"
             },
             "keyword": "Then "
           },
           {
             "result": {
-              "duration": 3521263900,
+              "duration": 8214015800,
               "status": "passed"
             },
             "line": 11,
-            "name": "click on new contact btn",
+            "name": "user move to deal page",
             "match": {
-              "location": "LoginStepDefination.click_on_new_contact_btn()"
+              "location": "DealStepDefination.user_move_to_deal_page()"
             },
             "keyword": "Then "
           },
           {
             "result": {
-              "duration": 4883100600,
+              "duration": 9356236800,
               "status": "passed"
             },
             "line": 12,
-            "name": "user enters contact details \"Pranav\" and \"Patil\" and \"Developer\"",
+            "name": "click on new deal btn",
             "match": {
-              "arguments": [
-                {
-                  "val": "Pranav",
-                  "offset": 29
-                },
-                {
-                  "val": "Patil",
-                  "offset": 42
-                },
-                {
-                  "val": "Developer",
-                  "offset": 54
-                }
-              ],
-              "location": "LoginStepDefination.user_enters_fistname_and_lastname_and_position(String,String,String)"
+              "location": "DealStepDefination.click_on_new_deal_btn()"
             },
-            "matchedColumns": [
-              2,
-              3,
-              4
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 4079373700,
+              "status": "passed"
+            },
+            "line": 13,
+            "name": "user enters deal details",
+            "match": {
+              "location": "DealStepDefination.user_enters_deal_deatils(DataTable)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "Test deal",
+                  "1000",
+                  "50",
+                  "10"
+                ],
+                "line": 14
+              }
             ],
             "keyword": "Then "
           },
           {
             "result": {
-              "duration": 4449779500,
+              "duration": 347607900,
               "status": "passed"
             },
-            "line": 13,
+            "line": 15,
             "name": "close the browser",
             "match": {
-              "location": "LoginStepDefination.close_the_browser()"
+              "location": "DealStepDefination.close_the_browser()"
             },
             "keyword": "Then "
           }
         ]
       }
     ],
-    "name": "Free CRM create new contact",
+    "name": "Deal data creation",
     "description": "",
-    "id": "free-crm-create-new-contact",
+    "id": "deal-data-creation",
     "keyword": "Feature",
-    "uri": "E:/Vivek Automation Study/Automation Workspace/FreeCRMBDDFramework/src/main/java/Features/contacts.feature"
+    "uri": "E:/Vivek Automation Study/Automation Workspace/FreeCRMBDDFramework/src/main/java/Features/deal.feature"
   }
 ]
