@@ -1,4 +1,4 @@
-$(document).ready(function() {var formatter = new CucumberHTML.DOMFormatter($('.cucumber-report'));formatter.uri("E:/Vivek Automation Study/Automation Workspace/FreeCRMBDDFramework/src/main/java/Features/deal.feature");
+$(document).ready(function() {var formatter = new CucumberHTML.DOMFormatter($('.cucumber-report'));formatter.uri("E:/Vivek Automation Study/Automation Workspace/FreeCRMBDDFramework/src/main/java/Features/dealsmap.feature");
 formatter.feature({
   "line": 1,
   "name": "Deal data creation",
@@ -30,38 +30,54 @@ formatter.step({
   "rows": [
     {
       "cells": [
+        "username",
+        "password"
+      ],
+      "line": 8
+    },
+    {
+      "cells": [
         "vivek.chopade28@gmail.com",
         "@Vivek28"
       ],
-      "line": 8
+      "line": 9
     }
   ],
   "keyword": "Then "
 });
 formatter.step({
-  "line": 9,
+  "line": 11,
   "name": "user clicks on login buttom",
   "keyword": "Then "
 });
 formatter.step({
-  "line": 10,
+  "line": 12,
   "name": "user is on home page",
   "keyword": "Then "
 });
 formatter.step({
-  "line": 11,
+  "line": 13,
   "name": "user move to deal page",
   "keyword": "Then "
 });
 formatter.step({
-  "line": 12,
+  "line": 14,
   "name": "click on new deal btn",
   "keyword": "Then "
 });
 formatter.step({
-  "line": 13,
+  "line": 15,
   "name": "user enters deal details",
   "rows": [
+    {
+      "cells": [
+        "title",
+        "amount",
+        "probabillity",
+        "comission"
+      ],
+      "line": 16
+    },
     {
       "cells": [
         "Test deal",
@@ -69,77 +85,95 @@ formatter.step({
         "50",
         "10"
       ],
-      "line": 14
+      "line": 17
+    },
+    {
+      "cells": [
+        "Test deal",
+        "2000",
+        "60",
+        "20"
+      ],
+      "line": 18
+    },
+    {
+      "cells": [
+        "Test deal",
+        "3000",
+        "70",
+        "30"
+      ],
+      "line": 19
     }
   ],
   "keyword": "Then "
 });
 formatter.step({
-  "line": 15,
+  "line": 21,
   "name": "close the browser",
   "keyword": "Then "
 });
 formatter.match({
-  "location": "DealStepDefination.user_already_login_page()"
+  "location": "DealsStepWithMapDefination.user_already_login_page()"
 });
 formatter.result({
-  "duration": 37487019300,
+  "duration": 22086178600,
   "status": "passed"
 });
 formatter.match({
-  "location": "DealStepDefination.title_of_login_page_is_free_CRM()"
+  "location": "DealsStepWithMapDefination.title_of_login_page_is_free_CRM()"
 });
 formatter.result({
-  "duration": 28961800,
+  "duration": 16808500,
   "status": "passed"
 });
 formatter.match({
-  "location": "DealStepDefination.user_enters_username_and_password(DataTable)"
+  "location": "DealsStepWithMapDefination.user_enters_username_and_password(DataTable)"
 });
 formatter.result({
-  "duration": 658893100,
+  "duration": 690615400,
   "status": "passed"
 });
 formatter.match({
-  "location": "DealStepDefination.user_clicks_on_login_buttom()"
+  "location": "DealsStepWithMapDefination.user_clicks_on_login_buttom()"
 });
 formatter.result({
-  "duration": 60084500,
+  "duration": 75551400,
   "status": "passed"
 });
 formatter.match({
-  "location": "DealStepDefination.user_is_on_login_button()"
+  "location": "DealsStepWithMapDefination.user_is_on_login_button()"
 });
 formatter.result({
-  "duration": 7855300,
+  "duration": 12017100,
   "status": "passed"
 });
 formatter.match({
-  "location": "DealStepDefination.user_move_to_deal_page()"
+  "location": "DealsStepWithMapDefination.user_move_to_deal_page()"
 });
 formatter.result({
-  "duration": 8214015800,
+  "duration": 8971985100,
   "status": "passed"
 });
 formatter.match({
-  "location": "DealStepDefination.click_on_new_deal_btn()"
+  "location": "DealsStepWithMapDefination.click_on_new_deal_btn()"
 });
 formatter.result({
-  "duration": 9356236800,
+  "duration": 9452537000,
   "status": "passed"
 });
 formatter.match({
-  "location": "DealStepDefination.user_enters_deal_deatils(DataTable)"
+  "location": "DealsStepWithMapDefination.user_enters_deal_deatils(DataTable)"
 });
 formatter.result({
-  "duration": 4079373700,
+  "duration": 47420014600,
   "status": "passed"
 });
 formatter.match({
-  "location": "DealStepDefination.close_the_browser()"
+  "location": "DealsStepWithMapDefination.close_the_browser()"
 });
 formatter.result({
-  "duration": 347607900,
+  "duration": 1896132900,
   "status": "passed"
 });
 });
