@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<testsuite failures="1" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="1" time="38.871881">
+<testcase classname="Free CRM application test" name="Free crm test" time="38.871881">
+<failure message="java.lang.Error: Unresolved compilation problem: &#10;&#9;Type mismatch: cannot convert from void to boolean&#10;&#13;&#10;&#9;at com.crm.qa.StepDefination.LoginStepDefination.verify_the_title(LoginStepDefination.java:52)&#13;&#10;&#9;at ✽.Then verify the title(E:/Vivek Automation Study/Automation Workspace/CucumberPOM/src/main/java/com/crn/qa/feature/login.feature:10)&#13;&#10;"><![CDATA[Given user open the browser.................................................passed
+Then user enters username and password......................................passed
+Then user click on login BTN................................................passed
+Then user click on deal BTN.................................................passed
+Then user click on new deal BTN.............................................passed
+Then verify the title.......................................................failed
+
+StackTrace:
+java.lang.Error: Unresolved compilation problem: 
+	Type mismatch: cannot convert from void to boolean
+
+	at com.crm.qa.StepDefination.LoginStepDefination.verify_the_title(LoginStepDefination.java:52)
+	at ✽.Then verify the title(E:/Vivek Automation Study/Automation Workspace/CucumberPOM/src/main/java/com/crn/qa/feature/login.feature:10)
+]]></failure>
+</testcase>
+</testsuite>

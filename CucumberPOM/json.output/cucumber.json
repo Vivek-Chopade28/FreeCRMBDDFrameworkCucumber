@@ -1,0 +1,95 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "line": 3,
+        "name": "Free crm test",
+        "description": "",
+        "id": "free-crm-application-test;free-crm-test",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 14779788400,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "user open the browser",
+            "match": {
+              "location": "LoginStepDefination.user_open_the_browser()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 3048002601,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "user enters username and password",
+            "match": {
+              "location": "LoginStepDefination.user_enters_username_and_password()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 8625236000,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "user click on login BTN",
+            "match": {
+              "location": "LoginStepDefination.user_click_on_login_BTN()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 679800,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "user click on deal BTN",
+            "match": {
+              "location": "LoginStepDefination.user_click_on_deal_BTN()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 12417767001,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "user click on new deal BTN",
+            "match": {
+              "location": "LoginStepDefination.user_click_on_new_deal_BTN()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 406999,
+              "error_message": "java.lang.Error: Unresolved compilation problem: \n\tType mismatch: cannot convert from void to boolean\n\r\n\tat com.crm.qa.StepDefination.LoginStepDefination.verify_the_title(LoginStepDefination.java:52)\r\n\tat ✽.Then verify the title(E:/Vivek Automation Study/Automation Workspace/CucumberPOM/src/main/java/com/crn/qa/feature/login.feature:10)\r\n",
+              "status": "failed"
+            },
+            "line": 10,
+            "name": "verify the title",
+            "match": {
+              "location": "LoginStepDefination.verify_the_title()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      }
+    ],
+    "name": "Free CRM application test",
+    "description": "",
+    "id": "free-crm-application-test",
+    "keyword": "Feature",
+    "uri": "E:/Vivek Automation Study/Automation Workspace/CucumberPOM/src/main/java/com/crn/qa/feature/login.feature"
+  }
+]
